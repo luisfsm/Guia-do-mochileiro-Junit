@@ -11,8 +11,10 @@ class TestCarrinhoDeCompras {
 
 	@Test
 	void TestaValorDePrecoDeProduto() {
-
-		assertEquals(5000.0, 5000);
+		Produtos produto = new Produtos("Carro", 5000.0);
+		CarrinhoDeCompras carrinho = new CarrinhoDeCompras();
+		carrinho.adicionarProdutoCarrinho(produto);		
+		assertEquals(5000.0, carrinho.totalValorAPagar());
 	}
 
 }

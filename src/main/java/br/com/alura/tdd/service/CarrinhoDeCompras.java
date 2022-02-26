@@ -24,9 +24,13 @@ public class CarrinhoDeCompras {
 		
 		for(int i = 0; i < PedidoItens.size(); i++) {
 			
-			total += PedidoItens.get(i).getPrice();	
+			setTotal(PedidoItens.get(i).getPrice());	
 		}		
 		return total;
+	}
+
+	public void setTotal(double total) {
+		this.total = total;
 	}
 
 }
