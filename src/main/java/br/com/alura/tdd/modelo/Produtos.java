@@ -6,7 +6,6 @@ public class Produtos {
 	private Double price;
 	
 	public Produtos(String nome, Double price) {
-		super();
 		this.nome = nome;
 		this.price = price;
 	}
@@ -27,7 +26,5 @@ public class Produtos {
 	}
 	public void setPrice(Double price) {
 		this.price = price;
-	}
-	
-	
+	}	
 }
